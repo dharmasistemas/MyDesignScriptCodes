@@ -1,0 +1,43 @@
+// Fibonacci iterativo
+// Desenvolvido por: Prof. Ari Monteiro
+// Data: 28-12-2022
+// Instagram: @dharmasistemas
+//
+def fiboIter(numTermos)
+{
+    return = [Imperative]
+    {
+        if (numTermos <= 0)
+        {
+            // Se a quantidade de termos for um número negativo
+            // retornar -1 para indicar entrada inválida
+            return = -1;
+        }
+        elseif (numTermos == 1)
+        {
+            // retornar o 1º termo da sequência que é 0
+            return = [0];
+        }
+        else
+        {
+            // Obter sequência de Fibonacci
+            termo1 = 0;
+            termo2 = 1;
+            serie = [termo1, termo2];
+            contador = 0;
+            while (contador < numTermos)
+            {
+                proxTermo = termo1 + termo2;
+                serie = List.AddItemToEnd(proxTermo, serie);
+                termo1 = termo2;
+                termo2 = proxTermo;
+                contador = contador + 1;
+            }
+
+            return = serie;
+        }
+    }
+};
+
+// Chamada da função fiboIter() para 5 termos
+// fiboIter(5);
