@@ -1,0 +1,33 @@
+// Fibonacci recursivo
+// Desenvolvido por: Prof. Ari Monteiro
+// Data: 28-12-2022
+// Instagram: @dharmasistemas
+//
+def fiboRecur(numTermos)
+{
+    return = [Imperative]
+    {
+        if (numTermos <= 2)
+        {
+            return = numTermos;
+        }
+        else
+        {
+            return = fiboRecur(numTermos - 1) + fiboRecur(numTermos - 2);
+        }
+    }
+};
+
+// Chamada da função fiboRecur() para 5 termos
+// serie = [];
+// qtdTermos = 5;
+// [Imperative]
+// {
+//     for (n in (1..qtdTermos))
+//     {
+//         proxTermo = fiboRecur(n);
+//         serie = List.AddItemToEnd(proxTermo, serie);
+/ /    }
+// 
+//     return = serie;
+// };
